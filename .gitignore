@@ -1,0 +1,36 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Jupyter ────────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Secrets and credentials ────────────────────────────────────────────────────
+.env
+kaggle.json
+*.key
+*.token
+
+# ── Dataset CSV files (do not commit raw data) ────────────────────────────────
+data/*.csv
+
+# ── macOS system files ─────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── IDE / editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
