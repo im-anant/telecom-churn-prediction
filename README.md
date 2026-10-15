@@ -128,8 +128,8 @@ These findings come directly from the charts in the notebook — verify them aga
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/AnantSrivastava26/Telecom-churn-prediction.git
-cd Telecom-churn-prediction
+git clone https://github.com/im-anant/telecom-churn-prediction.git
+cd telecom-churn-prediction
 
 # 2. Install dependencies
 pip install -r requirements.txt
