@@ -76,20 +76,18 @@ All models use `class_weight='balanced'` (except KNN, which does not support it)
 
 | Model | Accuracy | Precision | Recall | F1 | AUC-ROC | CV Acc (5-fold) |
 |---|---|---|---|---|---|---|
-| Logistic Regression | — | — | — | — | — | — |
-| KNN | — | — | — | — | — | — |
-| Decision Tree | — | — | — | — | — | — |
-| Random Forest | — | — | — | — | — | — |
+| Logistic Regression ⭐ | 0.7374 | 0.5026 | 0.7742 | 0.6095 | 0.839 | 0.7456 |
+| KNN | 0.7623 | 0.5559 | 0.5081 | 0.5309 | 0.7772 | 0.769 |
+| Decision Tree | 0.7459 | 0.5135 | 0.7688 | 0.6157 | 0.8211 | 0.7325 |
+| Random Forest | 0.7737 | 0.5978 | 0.4435 | 0.5093 | 0.8063 | 0.7811 |
 
-*Run the notebook to fill this table with real numbers. The notebook prints a full comparison table in Section 10.*
-
-**Best model:** The notebook automatically picks the model with the highest AUC-ROC. On this dataset, Logistic Regression and Random Forest usually perform similarly (AUC around 0.82–0.86). If they are close, the simpler Logistic Regression is preferred for interpretability.
+**Best model:** Logistic Regression ⭐ — highest AUC-ROC (0.839), best recall for churners (0.77), and tuned AUC of 0.8386 after GridSearchCV. Logistic Regression and Random Forest performed similarly, which is expected on this dataset. The simpler model is preferred for interpretability.
 
 ### Charts
 
 | Confusion Matrix (best model) | ROC Curves (all models) |
 |---|---|
-| *(run notebook → Section 12)* | *(run notebook → Section 10)* |
+| ![Confusion Matrix](images/confusion_matrix.png) | ![ROC Curves](images/roc_curves.png) |
 
 > To save charts as images: in each `plt.show()` cell, add `plt.savefig('images/chart_name.png', bbox_inches='tight')` before `plt.show()`.
 
